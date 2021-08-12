@@ -3,12 +3,12 @@
     public interface IAccount
     {
         string AccountHolder { get; set; }
-        string AccountType { get; set; }
+        string AccountType { get; }
         string AccountNo { get; set; }
+        decimal Rate { get; }
         decimal Balance { get; set; }
-        decimal Interest { get; set; }
         public bool IsWithdrawable { get; }
 
-        void CalculateInterest();
+        decimal CalculateInterest();
     }
 }

@@ -2,7 +2,7 @@
 {
     public interface IWithdrawable : IAccount
     {
-        decimal MinBalance { get; set; }
-        decimal Withdraw();
+        decimal MinBalance { get; }
+        decimal Withdraw(decimal amt);
     }
 }
