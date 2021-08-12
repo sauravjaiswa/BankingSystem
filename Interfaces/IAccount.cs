@@ -4,11 +4,12 @@
     {
         string AccountHolder { get; set; }
         string AccountType { get; }
-        string AccountNo { get; set; }
+        string AccountNo { get; }
         decimal Rate { get; }
-        decimal Balance { get; set; }
-        public bool IsWithdrawable { get; }
+        decimal Balance { get; }
 
-        decimal CalculateInterest();
+        void Deposit(decimal amt);
+        void Withdraw(decimal amt = 0);
+        void CalculateInterest();
     }
 }
