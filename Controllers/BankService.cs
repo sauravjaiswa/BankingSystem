@@ -26,7 +26,6 @@ namespace BankingSystem
 
         public IAccount GetAccount(string accountNum)
         {
-            Console.WriteLine(_accounts.Count);
             var account = _accounts.FirstOrDefault(a => a.AccountNo.Equals(accountNum));
 
             if (account == null)

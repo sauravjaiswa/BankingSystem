@@ -4,42 +4,42 @@
     {
         public string InsufficientBalance()
         {
-            return "Sorry! Your account balance is low.\n";
+            return "\nSorry! Your account balance is low.\n";
         }
 
         public string InvalidAccount()
         {
-            return "Given Account number does not exists!!\n";
+            return "\nGiven Account number does not exists!!\n";
         }
 
         public string SuccessDeposit(decimal amt, decimal bal)
         {
-            return $"Deposit Amt: Rs {amt}----Total Amt: Rs{bal}\n";
+            return $"\n------------------\nDeposit Amt: Rs {amt}\nTotal Amt: Rs{bal}\n-----------------\n";
         }
 
         public string SuccessfulRegistration()
         {
-            return "Account Registered successfully\n";
+            return "\nAccount Registered successfully\n";
         }
 
         public string SuccessWithdraw(decimal amt, decimal bal)
         {
-            return $"Withdrawn Amt: Rs {amt}----Total Amt: Rs{bal}\n";
+            return $"\n------------------\nWithdrawn Amt: Rs {amt}\nTotal Amt: Rs{bal}\n-----------------\n";
         }
 
         public string FailedDeposit()
         {
-            return "Failed to deposit";
+            return "\nFailed to deposit\n";
         }
 
         public string FailedWithdrawal()
         {
-            return "Failed to withdraw";
+            return "\nFailed to withdraw\n";
         }
 
         public string InvalidAmount()
         {
-            return "Invalid amount entered";
+            return "\nInvalid amount entered\n";
         }
     }
 }
